@@ -15,6 +15,9 @@
    - [3. Konfigurasi Domain](#3-konfigurasi-domain)
    - [4. Selesaikan Instalasi](#4-selesaikan-instalasi)
    - [5. Restart Server](#5-restart-server)
+4. [Menguji dan Berinteraksi dengan Server LDAP Secara Manual](#menguji-dan-berinteraksi-dengan-server-ldap-secara-manual)
+   - [1. Buka ldp.exe](#1-buka-ldpexe)
+   - [2. Koneksi ke Server LDAP](#2-koneksi-ke-server-ldap)
 
 ---
 
@@ -98,4 +101,15 @@
 
 ---
 
-Setelah restart, server Anda akan siap digunakan sebagai **Domain Controller**.
+## Menguji dan Berinteraksi dengan Server LDAP Secara Manual
+
+### 1. Buka ldp.exe
+- Buka Command Prompt: Tekan `Win + R`, ketik `cmd`, dan tekan `Enter`.
+- Jalankan ldp.exe: Ketik `ldp` dan tekan `Enter`. Ini akan membuka jendela ldp.exe.
+
+### 2. Koneksi ke Server LDAP
+- Koneksi: Pilih **Connection** di menu, kemudian pilih **Connect**.
+  - Masukkan Detail Server:
+    - **Server**: Masukkan nama host atau alamat IP server LDAP (misalnya, `172.10.10.10` atau `SERVERWIN-001.addsSecLab.id`).
+    - **Port**: Masukkan port yang digunakan oleh server LDAP. Port default untuk LDAP adalah `389`. Jika menggunakan LDAPS (LDAP Secure), port defaultnya adalah `636`.
+  - Klik **OK**: Klik tombol **OK** untuk menghubungkan ke server LDAP. Jika koneksi berhasil, Anda akan melihat pesan status di jendela output.
