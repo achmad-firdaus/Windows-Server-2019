@@ -1,5 +1,23 @@
 # Windows Server 2019
 
+## Daftar Isi
+1. [Konfigurasi Awal Server](#konfigurasi-awal-server)
+   - [1. Login ke Server](#1-login-ke-server)
+   - [2. Setel Nama Server](#2-setel-nama-server)
+2. [Menginstal Active Directory Domain Services (AD DS)](#menginstal-active-directory-domain-services-ad-ds)
+   - [1. Buka Server Manager](#1-buka-server-manager)
+   - [2. Pilih Peran (Server Roles)](#2-pilih-peran-server-roles)
+   - [3. Konfirmasi Instalasi](#3-konfirmasi-instalasi)
+   - [4. Selesai Instalasi](#4-selesai-instalasi)
+3. [Promosikan Server Sebagai Domain Controller](#promosikan-server-sebagai-domain-controller)
+   - [1. Buka Server Manager](#1-buka-server-manager-1)
+   - [2. Tambahkan Forest Baru](#2-tambahkan-forest-baru)
+   - [3. Konfigurasi Domain](#3-konfigurasi-domain)
+   - [4. Selesaikan Instalasi](#4-selesaikan-instalasi)
+   - [5. Restart Server](#5-restart-server)
+
+---
+
 ## Konfigurasi Awal Server
 
 ### 1. Login ke Server
