@@ -113,3 +113,26 @@
     - **Server**: Masukkan nama host atau alamat IP server LDAP (misalnya, `172.10.10.10` atau `SERVERWIN-001.addsSecLab.id`).
     - **Port**: Masukkan port yang digunakan oleh server LDAP. Port default untuk LDAP adalah `389`. Jika menggunakan LDAPS (LDAP Secure), port defaultnya adalah `636`.
   - Klik **OK**: Klik tombol **OK** untuk menghubungkan ke server LDAP. Jika koneksi berhasil, Anda akan melihat pesan status di jendela output.
+
+
+cara mengaktifkan schema Active Directory 
+buka cmd ketikan: regsvr32 schmmgmt.dll
+
+![image](https://github.com/user-attachments/assets/17c41d72-2f6f-45e8-a70a-24fa8f8327a3)
+
+menambahkan attribute pada active directory
+buka cmd ketikan mmc
+pilih file > klik Add/Remove snap-in
+akan muncul pop up 
+pilih Active Directory Schema > add > OK
+berikut adalah before after setelah penambahan attribute employeeID
+pastikan melakukan restart services AD setelah melakukan perubahan attribute
+
+![image](https://github.com/user-attachments/assets/9b072b37-4160-4f2f-9ff7-997d9e1ffa10)
+
+
+
+
+
+
+
