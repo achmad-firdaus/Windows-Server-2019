@@ -18,6 +18,11 @@
 4. [Menguji dan Berinteraksi dengan Server LDAP Secara Manual](#menguji-dan-berinteraksi-dengan-server-ldap-secara-manual)
    - [1. Buka ldp.exe](#1-buka-ldpexe)
    - [2. Koneksi ke Server LDAP](#2-koneksi-ke-server-ldap)
+5. [Menghapus Active Directory dari Domain Controller](#menghapus-active-directory-dari-domain-controller)
+   - [Menggunakan Server Manager](#a-menggunakan-server-manager)
+6. [Cara Mengaktifkan Schema Active Directory](#cara-mengaktifkan-schema-active-directory)
+7. [Menambahkan Attribute pada Active Directory](#menambahkan-attribute-pada-active-directory)
+
 
 ---
 
@@ -114,21 +119,41 @@
     - **Port**: Masukkan port yang digunakan oleh server LDAP. Port default untuk LDAP adalah `389`. Jika menggunakan LDAPS (LDAP Secure), port defaultnya adalah `636`.
   - Klik **OK**: Klik tombol **OK** untuk menghubungkan ke server LDAP. Jika koneksi berhasil, Anda akan melihat pesan status di jendela output.
 
+---
 
-cara mengaktifkan schema Active Directory 
-buka cmd ketikan: regsvr32 schmmgmt.dll
+## Menghapus Active Directory dari Domain Controller
+
+### a. Menggunakan Server Manager
+
+1. **Buka Server Manager:** Di server yang menjalankan AD DS, buka Server Manager.
+2. **Pilih Roles and Features:** Pilih **Manage** di pojok kanan atas, lalu pilih **Remove Roles and Features**.
+3. **Remove Roles:** Di wizard **Remove Roles and Features**, navigasikan ke **Roles** dan hilangkan centang pada **Active Directory Domain Services**. Ikuti petunjuk untuk menghapus peran ini.
+4. Setelah di restart secara otomatis, bisa dilanjutkan untuk membuat domain ulang [Promosikan Server Sebagai Domain Controller](#promosikan-server-sebagai-domain-controller).
+
+---
+
+## Cara Mengaktifkan Schema Active Directory
+
+Buka CMD, kemudian ketik:
+
+    regsvr32 schmmgmt.dll
 
 ![image](https://github.com/user-attachments/assets/17c41d72-2f6f-45e8-a70a-24fa8f8327a3)
 
-menambahkan attribute pada active directory
-buka cmd ketikan mmc
-pilih file > klik Add/Remove snap-in
-akan muncul pop up 
-pilih Active Directory Schema > add > OK
-berikut adalah before after setelah penambahan attribute employeeID
-pastikan melakukan restart services AD setelah melakukan perubahan attribute
+---
+
+## Menambahkan Attribute pada Active Directory
+
+1. Buka CMD, kemudian ketik `mmc`.
+2. Pilih **File** > klik **Add/Remove snap-in**.
+3. Akan muncul pop-up.
+4. Pilih **Active Directory Schema** > **Add** > **OK**.
+
+Berikut adalah before-after setelah penambahan attribute `employeeID`. Pastikan untuk melakukan restart services AD setelah melakukan perubahan attribute.
 
 ![image](https://github.com/user-attachments/assets/9b072b37-4160-4f2f-9ff7-997d9e1ffa10)
+
+
 
 
 
