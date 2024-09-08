@@ -40,11 +40,38 @@ Buka Server Manager:
 ![image](https://github.com/user-attachments/assets/eb2380ea-ca5d-4f53-8276-2fb906c4cef3)
 
 
-- 
-Promosikan Server sebagai Domain Controller:
+- klik close
 
-Setelah AD DS terpasang, buka Server Manager.
-Klik pada Notification Flag (ikon segitiga kuning) dan pilih Promote this server to a domain controller.
-Pilih Add a new forest jika ini adalah domain pertama yang Anda buat, dan masukkan nama domain yang diinginkan.
-Ikuti wizard untuk mengonfigurasi opsi domain, DSRM password (Directory Services Restore Mode), dan DNS.
+![image](https://github.com/user-attachments/assets/c7a9aaaf-09c0-4fc2-9aac-d3acd591ce7f)
+
+
+Promosikan Server sebagai Domain Controller:
+- Setelah AD DS terpasang, buka Server Manager.
+- Klik pada Notification Flag (ikon segitiga kuning) dan pilih Promote this server to a domain controller.
+
+![image](https://github.com/user-attachments/assets/b0d9d9e6-e206-4103-9320-3b18df16ab51)
+
+
+- Pilih Add a new forest jika ini adalah domain pertama yang Anda buat,
+- dan masukkan nama domain yang diinginkan, next.
+
+![image](https://github.com/user-attachments/assets/7c84714d-25dc-4a21-a111-ed0f132cfc54)
+
+
+- Ikuti wizard untuk mengonfigurasi opsi domain, isikan DSRM password (Directory Services Restore Mode), next
+
+![image](https://github.com/user-attachments/assets/dfcbe2f7-6791-4b11-9f46-5ba39f2473ef)
+
+
+- Ikuti wizard hingga ke bagian Prerequisites Check, klik Install. 
+
+![image](https://github.com/user-attachments/assets/6d5dcb5e-3b73-4112-98d9-b722750aeefe)
+
+- Setelah Installasi selesai akan auto restart
+
+
+
+- 
+- sd
+- asd
 Setelah konfigurasi selesai, server akan di-restart.
